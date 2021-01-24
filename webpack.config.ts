@@ -13,6 +13,10 @@ const config: webpack.Configuration = {
   module: {
     rules: [
       {
+        test: /\.vue$/,
+        loader: "vue-loader",
+      },
+      {
         test: /\.tsx?$/,
         exclude: /node_modules/,
         loader: "ts-loader",
@@ -22,13 +26,21 @@ const config: webpack.Configuration = {
         },
       },
       {
-        test: /\.vue$/,
-        loader: "vue-loader",
+        test: /\.css$/,
+        use: [
+          "vue-style-loader",
+          {
+            loader: "css-loader",
+            options: {
+              esModule: false,
+            },
+          },
+        ],
       },
     ],
   },
   resolve: {
-    extensions: [".ts", ".vue", ".json"],
+    extensions: [".ts", ".vue", ".json", ".js"],
   },
   plugins: [new VueLoaderPlugin()],
   devtool: "source-map",
