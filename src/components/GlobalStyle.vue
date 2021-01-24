@@ -1,7 +1,5 @@
 <template>
   <div class="global-style">
-    global style
-    <br />
     <slot></slot>
   </div>
 </template>

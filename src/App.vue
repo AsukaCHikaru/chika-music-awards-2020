@@ -1,17 +1,25 @@
 <template>
   <div class="app">
-    <global-style> hello world test </global-style>
+    <global-style>
+      <global-layout>
+        <top />
+      </global-layout>
+    </global-style>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
 import GlobalStyle from "./components/GlobalStyle.vue";
+import GlobalLayout from "./components/GlobalLayout.vue";
+import Top from "./pages/Top.vue";
 
 const App = defineComponent({
   name: "App",
   components: {
     GlobalStyle,
+    GlobalLayout,
+    Top,
   },
 });
 
