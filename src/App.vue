@@ -2,7 +2,15 @@
   <div class="app">
     <global-style>
       <global-layout>
-        <top />
+        <top-page />
+        <award-page category="MUSIC_VIDEO" />
+        <award-page category="VOCAL_PERFORMANCE" />
+        <award-page category="LYRICS" />
+        <award-page category="ACCOMPANIMENT" />
+        <award-page category="COMPOSITION" />
+        <award-page category="ARTIST" />
+        <award-page category="NEW_RECORD" />
+        <award-page category="RECORD" />
       </global-layout>
     </global-style>
   </div>
@@ -12,14 +20,16 @@
 import { defineComponent } from "vue";
 import GlobalStyle from "./components/GlobalStyle.vue";
 import GlobalLayout from "./components/GlobalLayout.vue";
-import Top from "./pages/Top.vue";
+import TopPage from "./pages/TopPage.vue";
+import AwardPage from "./pages/AwardPage.vue";
 
 const App = defineComponent({
   name: "App",
   components: {
     GlobalStyle,
     GlobalLayout,
-    Top,
+    TopPage,
+    AwardPage,
   },
 });
 

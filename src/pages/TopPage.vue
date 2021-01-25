@@ -18,16 +18,17 @@
 <script>
 import { defineComponent } from "vue";
 
-const Top = defineComponent({
-  name: "Top",
+const TopPage = defineComponent({
+  name: "TopPage",
 });
 
-export default Top;
+export default TopPage;
 </script>
 
 <style>
 .top {
-  height: calc(100vh - 70px - 70px);
+  padding: 70px 0;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

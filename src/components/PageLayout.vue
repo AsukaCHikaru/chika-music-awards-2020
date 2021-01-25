@@ -1,19 +1,20 @@
 <template>
-  <div class="global-layout">
+  <div class="page-layout">
     <slot></slot>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
+
 export default defineComponent({
-  name: "GlobalLayout",
+  name: "PageLayout",
 });
 </script>
 
-<style>
-.global-layout {
-  height: 100%;
-  padding: 0 70px;
+<style scoped>
+.page-layout {
+  height: calc(100vh - 70px - 70px);
+  margin-bottom: 70px;
 }
 </style>
