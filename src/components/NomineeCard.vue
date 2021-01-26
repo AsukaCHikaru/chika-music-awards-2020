@@ -13,15 +13,20 @@
     >
       "{{ nominee.title && nominee.title }}"
     </h2>
+    <media-links :youtube="nominee.youtube" :spotify="nominee.spotify" />
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent, PropType } from "vue";
 import { ArtistAwardNominee, RecordAwardNominee } from "../types/award";
+import MediaLinks from "./MediaLinks.vue";
 
 export default defineComponent({
   name: "NomineeCard",
+  components: {
+    MediaLinks,
+  },
   props: {
     nominee: {
       type: Object as PropType<RecordAwardNominee | ArtistAwardNominee>,
