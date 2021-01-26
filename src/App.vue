@@ -4,13 +4,15 @@
       <global-layout>
         <top-page />
         <award-page category="MUSIC_VIDEO" />
-        <award-page category="VOCAL_PERFORMANCE" />
-        <award-page category="LYRICS" />
-        <award-page category="ACCOMPANIMENT" />
-        <award-page category="COMPOSITION" />
-        <award-page category="ARTIST" />
-        <award-page category="NEW_RECORD" />
-        <award-page category="RECORD" />
+        <award-page-footer>
+          <award-page category="VOCAL_PERFORMANCE" />
+          <award-page category="LYRICS" />
+          <award-page category="ACCOMPANIMENT" />
+          <award-page category="COMPOSITION" />
+          <award-page category="ARTIST" />
+          <award-page category="NEW_RECORD" />
+          <award-page category="RECORD" />
+        </award-page-footer>
       </global-layout>
     </global-style>
   </div>
@@ -22,6 +24,7 @@ import GlobalStyle from "./components/GlobalStyle.vue";
 import GlobalLayout from "./components/GlobalLayout.vue";
 import TopPage from "./pages/TopPage.vue";
 import AwardPage from "./pages/AwardPage.vue";
+import AwardPageFooter from "./components/AwardPageFooter.vue";
 
 const App = defineComponent({
   name: "App",
@@ -30,6 +33,7 @@ const App = defineComponent({
     GlobalLayout,
     TopPage,
     AwardPage,
+    AwardPageFooter,
   },
 });
 
