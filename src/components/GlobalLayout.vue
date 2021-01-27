@@ -14,6 +14,7 @@ export default defineComponent({
 <style>
 .global-layout {
   height: 100%;
+  max-height: 100vh;
   padding: 0 70px;
   max-width: 1440px;
   margin: 0 auto;

@@ -1,19 +1,21 @@
 <template>
   <div class="app">
     <global-style>
-      <global-layout>
-        <top-page />
-        <award-page category="MUSIC_VIDEO" />
-        <award-page-footer>
-          <award-page category="VOCAL_PERFORMANCE" />
-          <award-page category="LYRICS" />
-          <award-page category="ACCOMPANIMENT" />
-          <award-page category="COMPOSITION" />
-          <award-page category="ARTIST" />
-          <award-page category="NEW_RECORD" />
-          <award-page category="RECORD" />
-        </award-page-footer>
-      </global-layout>
+      <page-scroller>
+        <global-layout>
+          <top-page />
+          <award-page category="MUSIC_VIDEO" />
+          <award-page-footer>
+            <award-page category="VOCAL_PERFORMANCE" />
+            <award-page category="LYRICS" />
+            <award-page category="ACCOMPANIMENT" />
+            <award-page category="COMPOSITION" />
+            <award-page category="ARTIST" />
+            <award-page category="NEW_RECORD" />
+            <award-page category="RECORD" />
+          </award-page-footer>
+        </global-layout>
+      </page-scroller>
     </global-style>
   </div>
 </template>
@@ -25,6 +27,7 @@ import GlobalLayout from "./components/GlobalLayout.vue";
 import TopPage from "./pages/TopPage.vue";
 import AwardPage from "./pages/AwardPage.vue";
 import AwardPageFooter from "./components/AwardPageFooter.vue";
+import PageScroller from "./components/PageScroller.vue";
 
 const App = defineComponent({
   name: "App",
@@ -34,6 +37,7 @@ const App = defineComponent({
     TopPage,
     AwardPage,
     AwardPageFooter,
+    PageScroller,
   },
 });
 

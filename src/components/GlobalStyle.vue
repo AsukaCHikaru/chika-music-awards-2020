@@ -22,6 +22,8 @@ export default GlobalStyle;
 }
 html {
   min-height: 100vh;
+  max-height: 100vh;
+  background-color: #1e113c;
 }
 h1,
 h2 {
@@ -69,6 +71,7 @@ input[type="text"] {
 body {
   width: 100%;
   height: 100%;
+  max-height: 100vh;
   margin: 0;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -83,7 +86,6 @@ body {
 
 .global-style {
   height: 100%;
-  background-color: #1e113c;
-  color: #fff;
+  max-height: 100vh;
 }
 </style>
