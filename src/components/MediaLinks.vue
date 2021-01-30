@@ -1,9 +1,9 @@
 <template>
   <div class="media-links-container">
     <div class="youtube-icon-wrapper" v-if="youtube">
-      <a :href="youtube" rel="noopener noreferrer" target="_blank">
+      <button @click="handleYoutubeClick(youtube)">
         <youtube-icon />
-      </a>
+      </button>
     </div>
     <div class="spotify-icon-wrapper" v-if="spotify">
       <a :href="spotify" rel="noopener noreferrer" target="_blank">
@@ -28,6 +28,7 @@ export default defineComponent({
     youtube: String,
     spotify: String,
   },
+  inject: ["handleYoutubeClick"],
 });
 </script>
 

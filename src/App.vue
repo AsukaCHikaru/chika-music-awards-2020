@@ -2,19 +2,21 @@
   <div class="app">
     <global-style>
       <page-scroller>
-        <global-layout>
-          <top-page />
-          <award-page category="MUSIC_VIDEO" />
-          <award-page-footer>
-            <award-page category="VOCAL_PERFORMANCE" />
-            <award-page category="LYRICS" />
-            <award-page category="ACCOMPANIMENT" />
-            <award-page category="COMPOSITION" />
-            <award-page category="ARTIST" />
-            <award-page category="NEW_RECORD" />
-            <award-page category="RECORD" />
-          </award-page-footer>
-        </global-layout>
+        <youtube-modal>
+          <global-layout>
+            <top-page />
+            <award-page category="MUSIC_VIDEO" />
+            <award-page-footer>
+              <award-page category="VOCAL_PERFORMANCE" />
+              <award-page category="LYRICS" />
+              <award-page category="ACCOMPANIMENT" />
+              <award-page category="COMPOSITION" />
+              <award-page category="ARTIST" />
+              <award-page category="NEW_RECORD" />
+              <award-page category="RECORD" />
+            </award-page-footer>
+          </global-layout>
+        </youtube-modal>
       </page-scroller>
     </global-style>
   </div>
@@ -28,6 +30,7 @@ import TopPage from "./pages/TopPage.vue";
 import AwardPage from "./pages/AwardPage.vue";
 import AwardPageFooter from "./components/AwardPageFooter.vue";
 import PageScroller from "./components/PageScroller.vue";
+import YoutubeModal from "./components/YoutubeModal.vue";
 
 const App = defineComponent({
   name: "App",
@@ -38,6 +41,7 @@ const App = defineComponent({
     AwardPage,
     AwardPageFooter,
     PageScroller,
+    YoutubeModal,
   },
 });
 
