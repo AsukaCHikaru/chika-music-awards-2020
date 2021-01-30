@@ -6,7 +6,7 @@ export const awardData: (RecordAwardNominee | ArtistAwardNominee)[] = [
     artist: "halsey",
     won: false,
     category: "MUSIC_VIDEO",
-    image: "",
+    image: "you_should_be_sad.jpg",
     youtube: "https://www.youtube.com/watch?v=8nBFqZppIF0",
     spotify:
       "https://open.spotify.com/track/7lidXGPXPYLNThITAOTlkK?si=T3XvxqyiRUm3dP5uY9XsEw",
@@ -17,7 +17,7 @@ export const awardData: (RecordAwardNominee | ArtistAwardNominee)[] = [
     feat: "ft. Shakira",
     won: true,
     category: "MUSIC_VIDEO",
-    image: "",
+    image: "translation.jpg",
     youtube: "https://www.youtube.com/watch?v=vMLk_T0PPbk",
     spotify:
       "https://open.spotify.com/track/1zLBsSVxETQOfINOLYvT5m?si=FVz6Q_0xQKWsji3FfMQY5g",
@@ -27,7 +27,7 @@ export const awardData: (RecordAwardNominee | ArtistAwardNominee)[] = [
     artist: "june",
     won: false,
     category: "MUSIC_VIDEO",
-    image: "",
+    image: "a_little_messed_up.jpg",
     youtube: "https://www.youtube.com/watch?v=IHoj7qvNmwk",
     spotify:
       "https://open.spotify.com/track/5iDaEbPX8Lq2evx3ZpAgQU?si=_4ML6zMiTGCbPwjVU91hjg",
@@ -37,7 +37,7 @@ export const awardData: (RecordAwardNominee | ArtistAwardNominee)[] = [
     artist: "King Gnu",
     won: false,
     category: "MUSIC_VIDEO",
-    image: "",
+    image: "hakujitsu.jpg",
     youtube: "https://www.youtube.com/watch?v=ony539T074w",
     spotify:
       "https://open.spotify.com/track/4UgUArf7laRrELMyEhEqS8?si=mgWkJmqbTnCOElzw2TlDJg",
@@ -48,7 +48,7 @@ export const awardData: (RecordAwardNominee | ArtistAwardNominee)[] = [
     feat: "(feat. 24kGoldn)",
     won: false,
     category: "MUSIC_VIDEO",
-    image: "",
+    image: "tick_tock.jpg",
     youtube: "https://www.youtube.com/watch?v=yC8SPG2LwSA",
     spotify:
       "https://open.spotify.com/track/27u7t9d7ZQoyjsCROHuZJ3?si=wjBOQo5JT--HszETdfhfvQ",
@@ -58,7 +58,7 @@ export const awardData: (RecordAwardNominee | ArtistAwardNominee)[] = [
     artist: "King Gnu",
     won: false,
     category: "VOCAL_PERFORMANCE",
-    image: "",
+    image: "hakujitsu.jpg",
     youtube: "https://www.youtube.com/watch?v=ony539T074w",
     spotify:
       "https://open.spotify.com/track/4UgUArf7laRrELMyEhEqS8?si=mgWkJmqbTnCOElzw2TlDJg",
@@ -68,7 +68,7 @@ export const awardData: (RecordAwardNominee | ArtistAwardNominee)[] = [
     artist: "Halsey",
     won: true,
     category: "VOCAL_PERFORMANCE",
-    image: "",
+    image: "you_should_be_sad.jpg",
     youtube: "https://www.youtube.com/watch?v=8nBFqZppIF0",
     spotify:
       "https://open.spotify.com/track/7lidXGPXPYLNThITAOTlkK?si=T3XvxqyiRUm3dP5uY9XsEw",
@@ -79,7 +79,7 @@ export const awardData: (RecordAwardNominee | ArtistAwardNominee)[] = [
     feat: "ft. Halsey",
     won: false,
     category: "VOCAL_PERFORMANCE",
-    image: "",
+    image: "closer.jpg",
     youtube: "https://www.youtube.com/watch?v=0zGcUoRlhmw",
     spotify:
       "https://open.spotify.com/track/7BKLCZ1jbUBVqRi2FVlTVw?si=BJB70DHeSSGfYf61d8FWYA",
@@ -90,7 +90,7 @@ export const awardData: (RecordAwardNominee | ArtistAwardNominee)[] = [
     feat: "(feat. Juice WRLD)",
     won: false,
     category: "VOCAL_PERFORMANCE",
-    image: "",
+    image: "godzilla.jpg",
     youtube: "https://www.youtube.com/watch?v=r_0JjYUe5jo",
     spotify:
       "https://open.spotify.com/track/7FIWs0pqAYbP91WWM0vlTQ?si=pKE617MdQcurApvmraSrjQ",
@@ -100,7 +100,7 @@ export const awardData: (RecordAwardNominee | ArtistAwardNominee)[] = [
     artist: "june",
     won: false,
     category: "VOCAL_PERFORMANCE",
-    image: "",
+    image: "ambulance.jpg",
     youtube: "https://www.youtube.com/watch?v=bk7-6CPJ7y0",
     spotify:
       "https://open.spotify.com/track/6Hg0gJtvyhKIVuy7qp0cRJ?si=pjQsC0u1TdC4QHmguhOZpA",
@@ -111,7 +111,7 @@ export const awardData: (RecordAwardNominee | ArtistAwardNominee)[] = [
     feat: "(feat. Eminem & 50 cent)",
     won: true,
     category: "LYRICS",
-    image: "",
+    image: "remember_the_name.jpg",
     youtube: "https://www.youtube.com/watch?v=ZX3B953Rc0I",
     spotify:
       "https://open.spotify.com/track/0AtP8EkGPn6SwxKDaUuXec?si=yW5pV445SRG0KUAvumUPiA",
@@ -121,7 +121,7 @@ export const awardData: (RecordAwardNominee | ArtistAwardNominee)[] = [
     artist: "Shakira",
     won: false,
     category: "LYRICS",
-    image: "",
+    image: "try_everything.jpg",
     youtube: "https://www.youtube.com/watch?v=c6rP-YP4c5I",
     spotify:
       "https://open.spotify.com/track/0VCJ5YjphljOf1YRcPp08v?si=QzlorFdhR3y9ct5b1VUgaQ",
@@ -131,7 +131,7 @@ export const awardData: (RecordAwardNominee | ArtistAwardNominee)[] = [
     artist: "june",
     won: false,
     category: "LYRICS",
-    image: "",
+    image: "ambulance.jpg",
     youtube: "https://www.youtube.com/watch?v=bk7-6CPJ7y0",
     spotify:
       "https://open.spotify.com/track/6Hg0gJtvyhKIVuy7qp0cRJ?si=pjQsC0u1TdC4QHmguhOZpA",
@@ -141,7 +141,7 @@ export const awardData: (RecordAwardNominee | ArtistAwardNominee)[] = [
     artist: "Halsey",
     won: false,
     category: "LYRICS",
-    image: "",
+    image: "you_should_be_sad.jpg",
     youtube: "https://www.youtube.com/watch?v=8nBFqZppIF0",
     spotify:
       "https://open.spotify.com/track/7lidXGPXPYLNThITAOTlkK?si=T3XvxqyiRUm3dP5uY9XsEw",
@@ -151,7 +151,7 @@ export const awardData: (RecordAwardNominee | ArtistAwardNominee)[] = [
     artist: "june",
     won: false,
     category: "LYRICS",
-    image: "",
+    image: "a_little_messed_up.jpg",
     youtube: "https://www.youtube.com/watch?v=IHoj7qvNmwk",
     spotify:
       "https://open.spotify.com/track/5iDaEbPX8Lq2evx3ZpAgQU?si=_4ML6zMiTGCbPwjVU91hjg",
@@ -161,7 +161,7 @@ export const awardData: (RecordAwardNominee | ArtistAwardNominee)[] = [
     artist: "Halsey",
     won: true,
     category: "ACCOMPANIMENT",
-    image: "",
+    image: "you_should_be_sad.jpg",
     youtube: "https://www.youtube.com/watch?v=8nBFqZppIF0",
     spotify:
       "https://open.spotify.com/track/7lidXGPXPYLNThITAOTlkK?si=T3XvxqyiRUm3dP5uY9XsEw",
@@ -172,7 +172,7 @@ export const awardData: (RecordAwardNominee | ArtistAwardNominee)[] = [
     feat: "(feat. 24kGoldn)",
     won: false,
     category: "ACCOMPANIMENT",
-    image: "",
+    image: "tick_tock.jpg",
     youtube: "https://www.youtube.com/watch?v=yC8SPG2LwSA",
     spotify:
       "https://open.spotify.com/track/27u7t9d7ZQoyjsCROHuZJ3?si=wjBOQo5JT--HszETdfhfvQ",
@@ -182,7 +182,7 @@ export const awardData: (RecordAwardNominee | ArtistAwardNominee)[] = [
     artist: "King Gnu",
     won: false,
     category: "ACCOMPANIMENT",
-    image: "",
+    image: "hakujitsu.jpg",
     youtube: "https://www.youtube.com/watch?v=ony539T074w",
     spotify:
       "https://open.spotify.com/track/4UgUArf7laRrELMyEhEqS8?si=mgWkJmqbTnCOElzw2TlDJg",
@@ -193,7 +193,7 @@ export const awardData: (RecordAwardNominee | ArtistAwardNominee)[] = [
     feat: "ft. Halsey",
     won: false,
     category: "ACCOMPANIMENT",
-    image: "",
+    image: "closer.jpg",
     youtube: "https://www.youtube.com/watch?v=0zGcUoRlhmw",
     spotify:
       "https://open.spotify.com/track/7BKLCZ1jbUBVqRi2FVlTVw?si=BJB70DHeSSGfYf61d8FWYA",
@@ -203,7 +203,7 @@ export const awardData: (RecordAwardNominee | ArtistAwardNominee)[] = [
     artist: "BLACKPINK",
     won: false,
     category: "ACCOMPANIMENT",
-    image: "",
+    image: "lovesick_girls.jpg",
     youtube: "https://www.youtube.com/watch?v=dyRsYk0LyA8",
     spotify:
       "https://open.spotify.com/track/4Vhvlhomv8fTp2e6I4XTpe?si=Usq2vDjoSCWShezp2Fnm1g",
@@ -213,7 +213,7 @@ export const awardData: (RecordAwardNominee | ArtistAwardNominee)[] = [
     artist: "K/DA",
     won: false,
     category: "COMPOSITION",
-    image: "",
+    image: "the_baddest.jpg",
     youtube: "https://www.youtube.com/watch?v=RkID8_gnTxw",
     spotify:
       "https://open.spotify.com/track/2V4Fx72svQRxrFvNT1eq5f?si=JyQIO2QxSgy6VAr1HAy85g",
@@ -224,7 +224,7 @@ export const awardData: (RecordAwardNominee | ArtistAwardNominee)[] = [
     feat: "ft. Shakira",
     won: false,
     category: "COMPOSITION",
-    image: "",
+    image: "translation.jpg",
     youtube: "https://www.youtube.com/watch?v=vMLk_T0PPbk",
     spotify:
       "https://open.spotify.com/track/1zLBsSVxETQOfINOLYvT5m?si=FVz6Q_0xQKWsji3FfMQY5g",
@@ -234,7 +234,7 @@ export const awardData: (RecordAwardNominee | ArtistAwardNominee)[] = [
     artist: "Anuel AA, Shakira",
     won: false,
     category: "COMPOSITION",
-    image: "",
+    image: "me_gusta.jpg",
     youtube: "https://www.youtube.com/watch?v=mf-UJ32PJgU",
     spotify:
       "https://open.spotify.com/track/5Xhqh4lwJPtMUTsdBztN1a?si=ua-yycnUSWe5cVhPzSvk0Q",
@@ -245,7 +245,7 @@ export const awardData: (RecordAwardNominee | ArtistAwardNominee)[] = [
     feat: "(with Halsey)",
     won: false,
     category: "COMPOSITION",
-    image: "",
+    image: "him_and_i.jpg",
     youtube: "https://www.youtube.com/watch?v=SA7AIQw-7Ms",
     spotify:
       "https://open.spotify.com/track/5k38wzpLb15YgncyWdTZE4?si=ZN6Q9BQvSL6IvllmVoJLYg",
@@ -255,7 +255,7 @@ export const awardData: (RecordAwardNominee | ArtistAwardNominee)[] = [
     artist: "BLACKPINK",
     won: true,
     category: "COMPOSITION",
-    image: "",
+    image: "lovesick_girls.jpg",
     youtube: "https://www.youtube.com/watch?v=dyRsYk0LyA8",
     spotify:
       "https://open.spotify.com/track/4Vhvlhomv8fTp2e6I4XTpe?si=Usq2vDjoSCWShezp2Fnm1g",
@@ -264,38 +264,38 @@ export const awardData: (RecordAwardNominee | ArtistAwardNominee)[] = [
     artist: "Shakira",
     won: false,
     category: "ARTIST",
-    image: "shakira",
+    image: "shakira.jpg",
   },
   {
     artist: "Halsey",
     won: true,
     category: "ARTIST",
-    image: "halsey",
+    image: "halsey.jpg",
   },
   {
     artist: "Ed Sheeran",
     won: false,
     category: "ARTIST",
-    image: "ed_sheeran",
+    image: "ed_sheeran.jpg",
   },
   {
     artist: "june",
     won: false,
     category: "ARTIST",
-    image: "june",
+    image: "june.jpg",
   },
   {
     artist: "Eminem",
     won: false,
     category: "ARTIST",
-    image: "eminem",
+    image: "eminem.jpg",
   },
   {
     title: "You should be sad",
     artist: "Halsey",
     won: true,
     category: "NEW_RECORD",
-    image: "",
+    image: "you_should_be_sad.jpg",
     youtube: "https://www.youtube.com/watch?v=8nBFqZppIF0",
     spotify:
       "https://open.spotify.com/track/7lidXGPXPYLNThITAOTlkK?si=T3XvxqyiRUm3dP5uY9XsEw",
@@ -305,7 +305,7 @@ export const awardData: (RecordAwardNominee | ArtistAwardNominee)[] = [
     artist: "june",
     won: false,
     category: "NEW_RECORD",
-    image: "",
+    image: "ambulance.jpg",
     youtube: "https://www.youtube.com/watch?v=bk7-6CPJ7y0",
     spotify:
       "https://open.spotify.com/track/6Hg0gJtvyhKIVuy7qp0cRJ?si=pjQsC0u1TdC4QHmguhOZpA",
@@ -315,7 +315,7 @@ export const awardData: (RecordAwardNominee | ArtistAwardNominee)[] = [
     artist: "Anuel AA, Shakira",
     won: false,
     category: "NEW_RECORD",
-    image: "",
+    image: "me_gusta.jpg",
     youtube: "https://www.youtube.com/watch?v=mf-UJ32PJgU",
     spotify:
       "https://open.spotify.com/track/5Xhqh4lwJPtMUTsdBztN1a?si=ua-yycnUSWe5cVhPzSvk0Q",
@@ -325,7 +325,7 @@ export const awardData: (RecordAwardNominee | ArtistAwardNominee)[] = [
     artist: "BLACKPINK",
     won: false,
     category: "NEW_RECORD",
-    image: "",
+    image: "lovesick_girls.jpg",
     youtube: "https://www.youtube.com/watch?v=dyRsYk0LyA8",
     spotify:
       "https://open.spotify.com/track/4Vhvlhomv8fTp2e6I4XTpe?si=Usq2vDjoSCWShezp2Fnm1g",
@@ -335,7 +335,7 @@ export const awardData: (RecordAwardNominee | ArtistAwardNominee)[] = [
     artist: "june",
     won: false,
     category: "NEW_RECORD",
-    image: "",
+    image: "a_little_messed_up.jpg",
     youtube: "https://www.youtube.com/watch?v=IHoj7qvNmwk",
     spotify:
       "https://open.spotify.com/track/5iDaEbPX8Lq2evx3ZpAgQU?si=_4ML6zMiTGCbPwjVU91hjg",
@@ -345,7 +345,7 @@ export const awardData: (RecordAwardNominee | ArtistAwardNominee)[] = [
     artist: "Halsey",
     won: false,
     category: "RECORD",
-    image: "",
+    image: "you_should_be_sad.jpg",
     youtube: "https://www.youtube.com/watch?v=8nBFqZppIF0",
     spotify:
       "https://open.spotify.com/track/7lidXGPXPYLNThITAOTlkK?si=T3XvxqyiRUm3dP5uY9XsEw",
@@ -355,7 +355,7 @@ export const awardData: (RecordAwardNominee | ArtistAwardNominee)[] = [
     artist: "Anuel AA, Shakira",
     won: false,
     category: "RECORD",
-    image: "",
+    image: "me_gusta.jpg",
     youtube: "https://www.youtube.com/watch?v=mf-UJ32PJgU",
     spotify:
       "https://open.spotify.com/track/5Xhqh4lwJPtMUTsdBztN1a?si=ua-yycnUSWe5cVhPzSvk0Q",
@@ -366,7 +366,7 @@ export const awardData: (RecordAwardNominee | ArtistAwardNominee)[] = [
     feat: "(with Halsey)",
     won: true,
     category: "RECORD",
-    image: "",
+    image: "him_and_i.jpg",
     youtube: "https://www.youtube.com/watch?v=SA7AIQw-7Ms",
     spotify:
       "https://open.spotify.com/track/5k38wzpLb15YgncyWdTZE4?si=ZN6Q9BQvSL6IvllmVoJLYg",
@@ -376,7 +376,7 @@ export const awardData: (RecordAwardNominee | ArtistAwardNominee)[] = [
     artist: "june",
     won: false,
     category: "RECORD",
-    image: "",
+    image: "ambulance.jpg",
     youtube: "https://www.youtube.com/watch?v=bk7-6CPJ7y0",
     spotify:
       "https://open.spotify.com/track/6Hg0gJtvyhKIVuy7qp0cRJ?si=pjQsC0u1TdC4QHmguhOZpA",
@@ -386,7 +386,7 @@ export const awardData: (RecordAwardNominee | ArtistAwardNominee)[] = [
     artist: "BLACKPINK",
     won: false,
     category: "RECORD",
-    image: "",
+    image: "lovesick_girls.jpg",
     youtube: "https://www.youtube.com/watch?v=dyRsYk0LyA8",
     spotify:
       "https://open.spotify.com/track/4Vhvlhomv8fTp2e6I4XTpe?si=Usq2vDjoSCWShezp2Fnm1g",

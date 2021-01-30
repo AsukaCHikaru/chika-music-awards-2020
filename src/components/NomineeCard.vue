@@ -1,7 +1,7 @@
 <template>
   <div class="nominee-card-container">
     <span :class="{ hide: !nominee.won }">★</span>
-    <img src="" alt="" :class="{ won: nominee.won }" />
+    <nominee-image :src="nominee.image" :won="nominee.won" />
     <h2 class="artist" :class="{ won: nominee.won }">{{ nominee.artist }}</h2>
     <h3 class="feat" v-if="nominee.feat" :class="{ won: nominee.won }">
       {{ nominee.feat }}
@@ -21,11 +21,13 @@
 import { defineComponent, PropType } from "vue";
 import { ArtistAwardNominee, RecordAwardNominee } from "../types/award";
 import MediaLinks from "./MediaLinks.vue";
+import NomineeImage from "./NomineeImage.vue";
 
 export default defineComponent({
   name: "NomineeCard",
   components: {
     MediaLinks,
+    NomineeImage,
   },
   props: {
     nominee: {
@@ -42,11 +44,6 @@ export default defineComponent({
   flex-direction: column;
   width: 248px;
   text-align: center;
-}
-img {
-  height: 248px;
-  width: 248px;
-  border: solid 1px #00938e;
 }
 
 .won {
