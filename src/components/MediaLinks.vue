@@ -57,4 +57,14 @@ button {
 button:focus {
   outline: none;
 }
+
+@media (max-width: 414px) {
+  .media-links-container {
+    justify-content: flex-start;
+    margin-top: 8px;
+  }
+  .youtube {
+    margin-right: 16px;
+  }
+}
 </style>

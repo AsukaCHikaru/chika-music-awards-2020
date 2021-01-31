@@ -62,4 +62,14 @@ export default TopPage;
     line-height: 1.1;
   }
 }
+
+@media (max-width: 414px) {
+  .top {
+    padding-top: 140px;
+  }
+  .top-title {
+    font-size: 70px;
+    line-height: 1.5;
+  }
+}
 </style>

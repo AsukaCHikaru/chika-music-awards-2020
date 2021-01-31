@@ -1,19 +1,23 @@
 <template>
   <div class="nominee-card-container">
-    <span :class="{ hide: !nominee.won }">★</span>
+    <div class="star-wrapper">
+      <span :class="{ hide: !nominee.won }">★</span>
+    </div>
     <nominee-image :src="nominee.image" :won="nominee.won" />
-    <h2 class="artist" :class="{ won: nominee.won }">{{ nominee.artist }}</h2>
-    <h3 class="feat" v-if="nominee.feat" :class="{ won: nominee.won }">
-      {{ nominee.feat }}
-    </h3>
-    <h2
-      class="record"
-      :class="{ won: nominee.won, 'no-feat': !nominee.feat }"
-      v-if="nominee.category !== 'ARTIST'"
-    >
-      "{{ nominee.title && nominee.title }}"
-    </h2>
-    <media-links :youtube="nominee.youtube" :spotify="nominee.spotify" />
+    <div class="nominee-info">
+      <h2 class="artist" :class="{ won: nominee.won }">{{ nominee.artist }}</h2>
+      <h3 class="feat" v-if="nominee.feat" :class="{ won: nominee.won }">
+        {{ nominee.feat }}
+      </h3>
+      <h2
+        class="record"
+        :class="{ won: nominee.won, 'no-feat': !nominee.feat }"
+        v-if="nominee.category !== 'ARTIST'"
+      >
+        "{{ nominee.title && nominee.title }}"
+      </h2>
+      <media-links :youtube="nominee.youtube" :spotify="nominee.spotify" />
+    </div>
   </div>
 </template>
 
@@ -43,10 +47,11 @@ export default defineComponent({
   display: flex;
   flex-direction: column;
   width: 200px;
-  text-align: center;
   margin-top: 25px;
 }
-
+.nominee-info {
+  text-align: center;
+}
 .won {
   border-color: #e2bfd4;
   color: #e2bfd4;
@@ -75,7 +80,9 @@ h3 {
 .record.no-feat {
   margin-top: 50px;
 }
-
+.star-wrapper {
+  text-align: center;
+}
 span {
   margin-bottom: 10px;
   font-size: 20px;
@@ -84,5 +91,40 @@ span {
 
 .hide {
   visibility: hidden;
+}
+
+@media (max-width: 414px) {
+  .nominee-card-container {
+    flex-direction: row;
+    height: 100px;
+    width: auto;
+    margin-top: 8px;
+  }
+  .nominee-card-container:first-of-type {
+    margin-top: 16px;
+  }
+  .nominee-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 16px;
+    text-align: left;
+  }
+  .artist,
+  .record {
+    margin-top: 8px;
+  }
+  .record.no-feat {
+    margin-top: 8px;
+  }
+  .star-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 8px;
+  }
+  span {
+    font-size: 16px;
+  }
 }
 </style>

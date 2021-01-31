@@ -36,4 +36,11 @@ img {
 .won {
   border-color: #e2bfd4;
 }
+
+@media (max-width: 414px) {
+  img {
+    height: 100px;
+    width: 100px;
+  }
+}
 </style>

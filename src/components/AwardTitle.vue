@@ -33,4 +33,16 @@ h1 {
   line-height: 1;
   color: #00938e;
 }
+
+@media (max-width: 414px) {
+  h1 {
+    font-size: 28px;
+    line-height: 35px;
+    white-space: nowrap;
+  }
+  .title-wrapper {
+    margin-left: 24px;
+    text-align: left;
+  }
+}
 </style>

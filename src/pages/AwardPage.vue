@@ -55,9 +55,20 @@ export default defineComponent({
   justify-content: space-between;
 }
 
-@media (min-height: 801px) {
+@media (min-height: 800px) and (min-width: 1920) {
   .nominee-container {
     margin-top: calc((100vh - 800px - 200px) / 2);
+  }
+}
+
+@media (max-width: 414px) {
+  .award-page-container {
+    padding: 70px 0;
+  }
+
+  .nominee-container {
+    flex-direction: column;
+    justify-content: flex-start;
   }
 }
 </style>

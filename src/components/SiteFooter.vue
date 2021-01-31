@@ -5,7 +5,7 @@
         href="https://asukachikaru.com"
         rel="noopener noreferrer"
         target="_blank"
-        >asukachikaru 2021</a
+        >asukachikaru.com</a
       >
     </div>
   </footer>
@@ -38,6 +38,12 @@ a {
 @media (min-height: 801px) {
   footer {
     bottom: calc(100vh - 800px - 200px - 45px);
+  }
+}
+
+@media (max-width: 414px) {
+  footer {
+    bottom: 24px;
   }
 }
 </style>

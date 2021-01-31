@@ -19,4 +19,10 @@ export default defineComponent({
   max-width: 1440px;
   margin: 0 auto;
 }
+
+@media (max-width: 414px) {
+  .global-layout {
+    padding: 0 16px;
+  }
+}
 </style>
