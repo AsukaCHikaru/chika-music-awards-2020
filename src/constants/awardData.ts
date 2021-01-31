@@ -2,14 +2,14 @@ import { ArtistAwardNominee, RecordAwardNominee } from "../types/award";
 
 export const awardData: (RecordAwardNominee | ArtistAwardNominee)[] = [
   {
-    title: "You should be sad",
-    artist: "halsey",
+    title: "A Little Messed Up",
+    artist: "june",
     won: false,
     category: "MUSIC_VIDEO",
-    image: "you_should_be_sad.jpg",
-    youtube: "https://www.youtube.com/watch?v=8nBFqZppIF0",
+    image: "a_little_messed_up.jpg",
+    youtube: "https://www.youtube.com/watch?v=IHoj7qvNmwk",
     spotify:
-      "https://open.spotify.com/track/7lidXGPXPYLNThITAOTlkK?si=T3XvxqyiRUm3dP5uY9XsEw",
+      "https://open.spotify.com/track/5iDaEbPX8Lq2evx3ZpAgQU?si=_4ML6zMiTGCbPwjVU91hjg",
   },
   {
     title: "GIRL LIKE ME",
@@ -23,26 +23,6 @@ export const awardData: (RecordAwardNominee | ArtistAwardNominee)[] = [
       "https://open.spotify.com/track/1zLBsSVxETQOfINOLYvT5m?si=FVz6Q_0xQKWsji3FfMQY5g",
   },
   {
-    title: "A Little Messed Up",
-    artist: "june",
-    won: false,
-    category: "MUSIC_VIDEO",
-    image: "a_little_messed_up.jpg",
-    youtube: "https://www.youtube.com/watch?v=IHoj7qvNmwk",
-    spotify:
-      "https://open.spotify.com/track/5iDaEbPX8Lq2evx3ZpAgQU?si=_4ML6zMiTGCbPwjVU91hjg",
-  },
-  {
-    title: "白日",
-    artist: "King Gnu",
-    won: false,
-    category: "MUSIC_VIDEO",
-    image: "hakujitsu.jpg",
-    youtube: "https://www.youtube.com/watch?v=ony539T074w",
-    spotify:
-      "https://open.spotify.com/track/4UgUArf7laRrELMyEhEqS8?si=mgWkJmqbTnCOElzw2TlDJg",
-  },
-  {
     title: "Tick Tock",
     artist: "Clean Bandit",
     feat: "(feat. 24kGoldn)",
@@ -54,24 +34,34 @@ export const awardData: (RecordAwardNominee | ArtistAwardNominee)[] = [
       "https://open.spotify.com/track/27u7t9d7ZQoyjsCROHuZJ3?si=wjBOQo5JT--HszETdfhfvQ",
   },
   {
+    title: "You should be sad",
+    artist: "halsey",
+    won: false,
+    category: "MUSIC_VIDEO",
+    image: "you_should_be_sad.jpg",
+    youtube: "https://www.youtube.com/watch?v=8nBFqZppIF0",
+    spotify:
+      "https://open.spotify.com/track/7lidXGPXPYLNThITAOTlkK?si=T3XvxqyiRUm3dP5uY9XsEw",
+  },
+  {
     title: "白日",
     artist: "King Gnu",
     won: false,
-    category: "VOCAL_PERFORMANCE",
+    category: "MUSIC_VIDEO",
     image: "hakujitsu.jpg",
     youtube: "https://www.youtube.com/watch?v=ony539T074w",
     spotify:
       "https://open.spotify.com/track/4UgUArf7laRrELMyEhEqS8?si=mgWkJmqbTnCOElzw2TlDJg",
   },
   {
-    title: "You should be sad",
-    artist: "Halsey",
-    won: true,
+    title: "Ambulance",
+    artist: "june",
+    won: false,
     category: "VOCAL_PERFORMANCE",
-    image: "you_should_be_sad.jpg",
-    youtube: "https://www.youtube.com/watch?v=8nBFqZppIF0",
+    image: "ambulance.jpg",
+    youtube: "https://www.youtube.com/watch?v=bk7-6CPJ7y0",
     spotify:
-      "https://open.spotify.com/track/7lidXGPXPYLNThITAOTlkK?si=T3XvxqyiRUm3dP5uY9XsEw",
+      "https://open.spotify.com/track/6Hg0gJtvyhKIVuy7qp0cRJ?si=pjQsC0u1TdC4QHmguhOZpA",
   },
   {
     title: "Closer",
@@ -96,14 +86,44 @@ export const awardData: (RecordAwardNominee | ArtistAwardNominee)[] = [
       "https://open.spotify.com/track/7FIWs0pqAYbP91WWM0vlTQ?si=pKE617MdQcurApvmraSrjQ",
   },
   {
+    title: "You should be sad",
+    artist: "Halsey",
+    won: true,
+    category: "VOCAL_PERFORMANCE",
+    image: "you_should_be_sad.jpg",
+    youtube: "https://www.youtube.com/watch?v=8nBFqZppIF0",
+    spotify:
+      "https://open.spotify.com/track/7lidXGPXPYLNThITAOTlkK?si=T3XvxqyiRUm3dP5uY9XsEw",
+  },
+  {
+    title: "白日",
+    artist: "King Gnu",
+    won: false,
+    category: "VOCAL_PERFORMANCE",
+    image: "hakujitsu.jpg",
+    youtube: "https://www.youtube.com/watch?v=ony539T074w",
+    spotify:
+      "https://open.spotify.com/track/4UgUArf7laRrELMyEhEqS8?si=mgWkJmqbTnCOElzw2TlDJg",
+  },
+  {
     title: "Ambulance",
     artist: "june",
     won: false,
-    category: "VOCAL_PERFORMANCE",
+    category: "LYRICS",
     image: "ambulance.jpg",
     youtube: "https://www.youtube.com/watch?v=bk7-6CPJ7y0",
     spotify:
       "https://open.spotify.com/track/6Hg0gJtvyhKIVuy7qp0cRJ?si=pjQsC0u1TdC4QHmguhOZpA",
+  },
+  {
+    title: "A Little Messed Up",
+    artist: "june",
+    won: false,
+    category: "LYRICS",
+    image: "a_little_messed_up.jpg",
+    youtube: "https://www.youtube.com/watch?v=IHoj7qvNmwk",
+    spotify:
+      "https://open.spotify.com/track/5iDaEbPX8Lq2evx3ZpAgQU?si=_4ML6zMiTGCbPwjVU91hjg",
   },
   {
     title: "Remember The Name",
@@ -127,16 +147,6 @@ export const awardData: (RecordAwardNominee | ArtistAwardNominee)[] = [
       "https://open.spotify.com/track/0VCJ5YjphljOf1YRcPp08v?si=QzlorFdhR3y9ct5b1VUgaQ",
   },
   {
-    title: "Ambulance",
-    artist: "june",
-    won: false,
-    category: "LYRICS",
-    image: "ambulance.jpg",
-    youtube: "https://www.youtube.com/watch?v=bk7-6CPJ7y0",
-    spotify:
-      "https://open.spotify.com/track/6Hg0gJtvyhKIVuy7qp0cRJ?si=pjQsC0u1TdC4QHmguhOZpA",
-  },
-  {
     title: "You should be sad",
     artist: "Halsey",
     won: false,
@@ -145,47 +155,6 @@ export const awardData: (RecordAwardNominee | ArtistAwardNominee)[] = [
     youtube: "https://www.youtube.com/watch?v=8nBFqZppIF0",
     spotify:
       "https://open.spotify.com/track/7lidXGPXPYLNThITAOTlkK?si=T3XvxqyiRUm3dP5uY9XsEw",
-  },
-  {
-    title: "A Little Messed Up",
-    artist: "june",
-    won: false,
-    category: "LYRICS",
-    image: "a_little_messed_up.jpg",
-    youtube: "https://www.youtube.com/watch?v=IHoj7qvNmwk",
-    spotify:
-      "https://open.spotify.com/track/5iDaEbPX8Lq2evx3ZpAgQU?si=_4ML6zMiTGCbPwjVU91hjg",
-  },
-  {
-    title: "You should be sad",
-    artist: "Halsey",
-    won: true,
-    category: "ACCOMPANIMENT",
-    image: "you_should_be_sad.jpg",
-    youtube: "https://www.youtube.com/watch?v=8nBFqZppIF0",
-    spotify:
-      "https://open.spotify.com/track/7lidXGPXPYLNThITAOTlkK?si=T3XvxqyiRUm3dP5uY9XsEw",
-  },
-  {
-    title: "Tick Tock",
-    artist: "Clean Bandit",
-    feat: "(feat. 24kGoldn)",
-    won: false,
-    category: "ACCOMPANIMENT",
-    image: "tick_tock.jpg",
-    youtube: "https://www.youtube.com/watch?v=yC8SPG2LwSA",
-    spotify:
-      "https://open.spotify.com/track/27u7t9d7ZQoyjsCROHuZJ3?si=wjBOQo5JT--HszETdfhfvQ",
-  },
-  {
-    title: "白日",
-    artist: "King Gnu",
-    won: false,
-    category: "ACCOMPANIMENT",
-    image: "hakujitsu.jpg",
-    youtube: "https://www.youtube.com/watch?v=ony539T074w",
-    spotify:
-      "https://open.spotify.com/track/4UgUArf7laRrELMyEhEqS8?si=mgWkJmqbTnCOElzw2TlDJg",
   },
   {
     title: "Closer",
@@ -209,14 +178,35 @@ export const awardData: (RecordAwardNominee | ArtistAwardNominee)[] = [
       "https://open.spotify.com/track/4Vhvlhomv8fTp2e6I4XTpe?si=Usq2vDjoSCWShezp2Fnm1g",
   },
   {
-    title: "THE BADDEST",
-    artist: "K/DA",
+    title: "Tick Tock",
+    artist: "Clean Bandit",
+    feat: "(feat. 24kGoldn)",
     won: false,
-    category: "COMPOSITION",
-    image: "the_baddest.jpg",
-    youtube: "https://www.youtube.com/watch?v=RkID8_gnTxw",
+    category: "ACCOMPANIMENT",
+    image: "tick_tock.jpg",
+    youtube: "https://www.youtube.com/watch?v=yC8SPG2LwSA",
     spotify:
-      "https://open.spotify.com/track/2V4Fx72svQRxrFvNT1eq5f?si=JyQIO2QxSgy6VAr1HAy85g",
+      "https://open.spotify.com/track/27u7t9d7ZQoyjsCROHuZJ3?si=wjBOQo5JT--HszETdfhfvQ",
+  },
+  {
+    title: "You should be sad",
+    artist: "Halsey",
+    won: true,
+    category: "ACCOMPANIMENT",
+    image: "you_should_be_sad.jpg",
+    youtube: "https://www.youtube.com/watch?v=8nBFqZppIF0",
+    spotify:
+      "https://open.spotify.com/track/7lidXGPXPYLNThITAOTlkK?si=T3XvxqyiRUm3dP5uY9XsEw",
+  },
+  {
+    title: "白日",
+    artist: "King Gnu",
+    won: false,
+    category: "ACCOMPANIMENT",
+    image: "hakujitsu.jpg",
+    youtube: "https://www.youtube.com/watch?v=ony539T074w",
+    spotify:
+      "https://open.spotify.com/track/4UgUArf7laRrELMyEhEqS8?si=mgWkJmqbTnCOElzw2TlDJg",
   },
   {
     title: "GIRL LIKE ME",
@@ -230,19 +220,8 @@ export const awardData: (RecordAwardNominee | ArtistAwardNominee)[] = [
       "https://open.spotify.com/track/1zLBsSVxETQOfINOLYvT5m?si=FVz6Q_0xQKWsji3FfMQY5g",
   },
   {
-    title: "Me Gusta",
-    artist: "Anuel AA, Shakira",
-    won: false,
-    category: "COMPOSITION",
-    image: "me_gusta.jpg",
-    youtube: "https://www.youtube.com/watch?v=mf-UJ32PJgU",
-    spotify:
-      "https://open.spotify.com/track/5Xhqh4lwJPtMUTsdBztN1a?si=ua-yycnUSWe5cVhPzSvk0Q",
-  },
-  {
     title: "Him & I",
-    artist: "G-Eazy",
-    feat: "(with Halsey)",
+    artist: "G-Eazy, Halsey",
     won: false,
     category: "COMPOSITION",
     image: "him_and_i.jpg",
@@ -261,16 +240,24 @@ export const awardData: (RecordAwardNominee | ArtistAwardNominee)[] = [
       "https://open.spotify.com/track/4Vhvlhomv8fTp2e6I4XTpe?si=Usq2vDjoSCWShezp2Fnm1g",
   },
   {
-    artist: "Shakira",
+    title: "Me Gusta",
+    artist: "Anuel AA, Shakira",
     won: false,
-    category: "ARTIST",
-    image: "shakira.jpg",
+    category: "COMPOSITION",
+    image: "me_gusta.jpg",
+    youtube: "https://www.youtube.com/watch?v=mf-UJ32PJgU",
+    spotify:
+      "https://open.spotify.com/track/5Xhqh4lwJPtMUTsdBztN1a?si=ua-yycnUSWe5cVhPzSvk0Q",
   },
   {
-    artist: "Halsey",
-    won: true,
-    category: "ARTIST",
-    image: "halsey.jpg",
+    title: "THE BADDEST",
+    artist: "K/DA",
+    won: false,
+    category: "COMPOSITION",
+    image: "the_baddest.jpg",
+    youtube: "https://www.youtube.com/watch?v=RkID8_gnTxw",
+    spotify:
+      "https://open.spotify.com/track/2V4Fx72svQRxrFvNT1eq5f?si=JyQIO2QxSgy6VAr1HAy85g",
   },
   {
     artist: "Ed Sheeran",
@@ -279,56 +266,28 @@ export const awardData: (RecordAwardNominee | ArtistAwardNominee)[] = [
     image: "ed_sheeran.jpg",
   },
   {
-    artist: "june",
-    won: false,
-    category: "ARTIST",
-    image: "june.jpg",
-  },
-  {
     artist: "Eminem",
     won: false,
     category: "ARTIST",
     image: "eminem.jpg",
   },
   {
-    title: "You should be sad",
     artist: "Halsey",
     won: true,
-    category: "NEW_RECORD",
-    image: "you_should_be_sad.jpg",
-    youtube: "https://www.youtube.com/watch?v=8nBFqZppIF0",
-    spotify:
-      "https://open.spotify.com/track/7lidXGPXPYLNThITAOTlkK?si=T3XvxqyiRUm3dP5uY9XsEw",
+    category: "ARTIST",
+    image: "halsey.jpg",
   },
   {
-    title: "Ambulance",
     artist: "june",
     won: false,
-    category: "NEW_RECORD",
-    image: "ambulance.jpg",
-    youtube: "https://www.youtube.com/watch?v=bk7-6CPJ7y0",
-    spotify:
-      "https://open.spotify.com/track/6Hg0gJtvyhKIVuy7qp0cRJ?si=pjQsC0u1TdC4QHmguhOZpA",
+    category: "ARTIST",
+    image: "june.jpg",
   },
   {
-    title: "Me Gusta",
-    artist: "Anuel AA, Shakira",
+    artist: "Shakira",
     won: false,
-    category: "NEW_RECORD",
-    image: "me_gusta.jpg",
-    youtube: "https://www.youtube.com/watch?v=mf-UJ32PJgU",
-    spotify:
-      "https://open.spotify.com/track/5Xhqh4lwJPtMUTsdBztN1a?si=ua-yycnUSWe5cVhPzSvk0Q",
-  },
-  {
-    title: "Lovesick Girls",
-    artist: "BLACKPINK",
-    won: false,
-    category: "NEW_RECORD",
-    image: "lovesick_girls.jpg",
-    youtube: "https://www.youtube.com/watch?v=dyRsYk0LyA8",
-    spotify:
-      "https://open.spotify.com/track/4Vhvlhomv8fTp2e6I4XTpe?si=Usq2vDjoSCWShezp2Fnm1g",
+    category: "ARTIST",
+    image: "shakira.jpg",
   },
   {
     title: "A Little Messed Up",
@@ -341,35 +300,44 @@ export const awardData: (RecordAwardNominee | ArtistAwardNominee)[] = [
       "https://open.spotify.com/track/5iDaEbPX8Lq2evx3ZpAgQU?si=_4ML6zMiTGCbPwjVU91hjg",
   },
   {
-    title: "You should be sad",
-    artist: "Halsey",
+    title: "Ambulance",
+    artist: "june",
     won: false,
-    category: "RECORD",
-    image: "you_should_be_sad.jpg",
-    youtube: "https://www.youtube.com/watch?v=8nBFqZppIF0",
+    category: "NEW_RECORD",
+    image: "ambulance.jpg",
+    youtube: "https://www.youtube.com/watch?v=bk7-6CPJ7y0",
     spotify:
-      "https://open.spotify.com/track/7lidXGPXPYLNThITAOTlkK?si=T3XvxqyiRUm3dP5uY9XsEw",
+      "https://open.spotify.com/track/6Hg0gJtvyhKIVuy7qp0cRJ?si=pjQsC0u1TdC4QHmguhOZpA",
+  },
+  {
+    title: "Lovesick Girls",
+    artist: "BLACKPINK",
+    won: false,
+    category: "NEW_RECORD",
+    image: "lovesick_girls.jpg",
+    youtube: "https://www.youtube.com/watch?v=dyRsYk0LyA8",
+    spotify:
+      "https://open.spotify.com/track/4Vhvlhomv8fTp2e6I4XTpe?si=Usq2vDjoSCWShezp2Fnm1g",
   },
   {
     title: "Me Gusta",
     artist: "Anuel AA, Shakira",
     won: false,
-    category: "RECORD",
+    category: "NEW_RECORD",
     image: "me_gusta.jpg",
     youtube: "https://www.youtube.com/watch?v=mf-UJ32PJgU",
     spotify:
       "https://open.spotify.com/track/5Xhqh4lwJPtMUTsdBztN1a?si=ua-yycnUSWe5cVhPzSvk0Q",
   },
   {
-    title: "Him & I",
-    artist: "G-Eazy",
-    feat: "(with Halsey)",
+    title: "You should be sad",
+    artist: "Halsey",
     won: true,
-    category: "RECORD",
-    image: "him_and_i.jpg",
-    youtube: "https://www.youtube.com/watch?v=SA7AIQw-7Ms",
+    category: "NEW_RECORD",
+    image: "you_should_be_sad.jpg",
+    youtube: "https://www.youtube.com/watch?v=8nBFqZppIF0",
     spotify:
-      "https://open.spotify.com/track/5k38wzpLb15YgncyWdTZE4?si=ZN6Q9BQvSL6IvllmVoJLYg",
+      "https://open.spotify.com/track/7lidXGPXPYLNThITAOTlkK?si=T3XvxqyiRUm3dP5uY9XsEw",
   },
   {
     title: "Ambulance",
@@ -382,6 +350,16 @@ export const awardData: (RecordAwardNominee | ArtistAwardNominee)[] = [
       "https://open.spotify.com/track/6Hg0gJtvyhKIVuy7qp0cRJ?si=pjQsC0u1TdC4QHmguhOZpA",
   },
   {
+    title: "Him & I",
+    artist: "G-Eazy, Halsey",
+    won: true,
+    category: "RECORD",
+    image: "him_and_i.jpg",
+    youtube: "https://www.youtube.com/watch?v=SA7AIQw-7Ms",
+    spotify:
+      "https://open.spotify.com/track/5k38wzpLb15YgncyWdTZE4?si=ZN6Q9BQvSL6IvllmVoJLYg",
+  },
+  {
     title: "Lovesick Girls",
     artist: "BLACKPINK",
     won: false,
@@ -390,5 +368,25 @@ export const awardData: (RecordAwardNominee | ArtistAwardNominee)[] = [
     youtube: "https://www.youtube.com/watch?v=dyRsYk0LyA8",
     spotify:
       "https://open.spotify.com/track/4Vhvlhomv8fTp2e6I4XTpe?si=Usq2vDjoSCWShezp2Fnm1g",
+  },
+  {
+    title: "Me Gusta",
+    artist: "Anuel AA, Shakira",
+    won: false,
+    category: "RECORD",
+    image: "me_gusta.jpg",
+    youtube: "https://www.youtube.com/watch?v=mf-UJ32PJgU",
+    spotify:
+      "https://open.spotify.com/track/5Xhqh4lwJPtMUTsdBztN1a?si=ua-yycnUSWe5cVhPzSvk0Q",
+  },
+  {
+    title: "You should be sad",
+    artist: "Halsey",
+    won: false,
+    category: "RECORD",
+    image: "you_should_be_sad.jpg",
+    youtube: "https://www.youtube.com/watch?v=8nBFqZppIF0",
+    spotify:
+      "https://open.spotify.com/track/7lidXGPXPYLNThITAOTlkK?si=T3XvxqyiRUm3dP5uY9XsEw",
   },
 ];
