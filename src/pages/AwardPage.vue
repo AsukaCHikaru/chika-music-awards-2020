@@ -8,6 +8,7 @@
         v-bind:key="index"
       />
     </div>
+    <site-footer v-if="category === 'MUSIC_VIDEO'" />
   </div>
 </template>
 
@@ -22,12 +23,14 @@ import { awardData } from "../constants/awardData";
 
 import AwardTitle from "../components/AwardTitle.vue";
 import NomineeCard from "../components/NomineeCard.vue";
+import SiteFooter from "../components/SiteFooter.vue";
 
 export default defineComponent({
   name: "AwardPage",
   components: {
     AwardTitle,
     NomineeCard,
+    SiteFooter,
   },
   props: {
     category: { type: Object as PropType<AwardTypes> },
@@ -44,6 +47,7 @@ export default defineComponent({
 .award-page-container {
   height: 100vh;
   padding: 50px 0;
+  position: relative;
 }
 .nominee-container {
   display: flex;

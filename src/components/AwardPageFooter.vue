@@ -82,7 +82,7 @@ export default defineComponent({
 <style scoped>
 .page-footer {
   position: sticky;
-  bottom: 25px;
+  bottom: 65px;
   display: flex;
   flex-direction: row;
   justify-content: center;
