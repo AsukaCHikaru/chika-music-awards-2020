@@ -3,7 +3,11 @@
     <div class="star-wrapper">
       <span :class="{ hide: !nominee.won }">★</span>
     </div>
-    <nominee-image :src="nominee.image" :won="nominee.won" />
+    <nominee-image
+      :src="nominee.image"
+      :won="nominee.won"
+      @click="handleYoutubeClick(nominee.youtube)"
+    />
     <div class="nominee-info">
       <h2 class="artist" :class="{ won: nominee.won }">{{ nominee.artist }}</h2>
       <h3 class="feat" v-if="nominee.feat" :class="{ won: nominee.won }">
@@ -39,6 +43,7 @@ export default defineComponent({
       required: true,
     },
   },
+  inject: ["handleYoutubeClick"],
 });
 </script>
 
@@ -113,6 +118,9 @@ span {
   .artist,
   .record {
     margin-top: 8px;
+  }
+  .feat {
+    margin-top: 0;
   }
   .record.no-feat {
     margin-top: 8px;

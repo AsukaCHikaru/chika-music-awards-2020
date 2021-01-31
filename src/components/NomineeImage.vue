@@ -32,6 +32,7 @@ img {
   height: 200px;
   width: 200px;
   border: solid 1px #00938e;
+  cursor: pointer;
 }
 .won {
   border-color: #e2bfd4;

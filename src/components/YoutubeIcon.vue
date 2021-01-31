@@ -3,8 +3,6 @@
     xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink"
     version="1.1"
-    width="20"
-    height="20"
     viewBox="0 0 16 16"
   >
     <path
@@ -21,3 +19,17 @@ export default defineComponent({
   name: "SpotifyIcon",
 });
 </script>
+
+<style scoped>
+svg {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 414px) {
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+</style>
