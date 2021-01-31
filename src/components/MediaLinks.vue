@@ -1,11 +1,11 @@
 <template>
   <div class="media-links-container">
-    <div class="youtube-icon-wrapper" v-if="youtube">
+    <div class="icon-wrapper youtube" v-if="youtube">
       <button @click="handleYoutubeClick(youtube)">
         <youtube-icon />
       </button>
     </div>
-    <div class="spotify-icon-wrapper" v-if="spotify">
+    <div class="icon-wrapper" v-if="spotify">
       <a :href="spotify" rel="noopener noreferrer" target="_blank">
         <spotify-icon />
       </a>
@@ -37,8 +37,20 @@ export default defineComponent({
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-top: 25px;
 }
-.youtube-icon-wrapper {
-  margin-right: 15px;
+.icon-wrapper {
+  display: flex;
+  height: 20px;
+}
+.youtube {
+  margin-right: 20px;
+}
+a,
+button {
+  display: inline-block;
+  height: 20px;
+  font-size: 20px;
+  line-height: 1;
 }
 </style>

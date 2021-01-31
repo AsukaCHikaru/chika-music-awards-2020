@@ -29,8 +29,8 @@ export default defineComponent({
 
 <style scoped>
 img {
-  height: 248px;
-  width: 248px;
+  height: 200px;
+  width: 200px;
   border: solid 1px #00938e;
 }
 .won {

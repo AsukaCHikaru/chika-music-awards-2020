@@ -42,8 +42,9 @@ export default defineComponent({
 .nominee-card-container {
   display: flex;
   flex-direction: column;
-  width: 248px;
+  width: 200px;
   text-align: center;
+  margin-top: 25px;
 }
 
 .won {
@@ -63,20 +64,20 @@ h3 {
 
 .artist,
 .record {
-  margin-top: 15px;
+  margin-top: 25px;
 }
 
 .feat {
   margin-top: 5px;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 .record.no-feat {
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 span {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-size: 20px;
   color: #e2bfd4;
 }

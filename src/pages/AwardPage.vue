@@ -43,7 +43,7 @@ export default defineComponent({
 <style scoped>
 .award-page-container {
   height: 100vh;
-  padding: 48px 0;
+  padding: 50px 0;
 }
 .nominee-container {
   display: flex;

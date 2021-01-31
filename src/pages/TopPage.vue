@@ -9,9 +9,9 @@
       <br />
       2020
     </div>
-    <div class="top--triangle-bot-wrapper">
+    <!-- <div class="top--triangle-bot-wrapper">
       <div class="top--triangle-bot"></div>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -27,7 +27,7 @@ export default TopPage;
 
 <style>
 .top {
-  padding: 70px 0;
+  padding: 50px 0;
   height: 100vh;
   display: flex;
   flex-direction: column;
