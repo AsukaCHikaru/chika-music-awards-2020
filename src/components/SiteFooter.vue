@@ -35,7 +35,7 @@ a {
   font-size: 15px;
   line-height: 1;
 }
-@media (min-width: 801px) {
+@media (min-height: 801px) {
   footer {
     bottom: calc(100vh - 800px - 200px - 45px);
   }

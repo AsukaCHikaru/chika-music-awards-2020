@@ -55,4 +55,11 @@ export default TopPage;
   border-top-color: #00938e;
   border-top-width: 41.6px;
 }
+
+@media (min-height: 1000px) {
+  .top-title {
+    font-size: 15vh;
+    line-height: 1.1;
+  }
+}
 </style>
