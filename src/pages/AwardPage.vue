@@ -50,4 +50,10 @@ export default defineComponent({
   flex-direction: row;
   justify-content: space-between;
 }
+
+@media (min-height: 801px) {
+  .nominee-container {
+    margin-top: calc((100vh - 800px - 200px) / 2);
+  }
+}
 </style>

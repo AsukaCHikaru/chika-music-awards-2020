@@ -53,4 +53,8 @@ button {
   font-size: 20px;
   line-height: 1;
 }
+
+button:focus {
+  outline: none;
+}
 </style>

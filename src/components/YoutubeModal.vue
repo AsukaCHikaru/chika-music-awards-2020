@@ -39,7 +39,9 @@ export default defineComponent({
 
 <style scoped>
 .modal-wrapper {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: fixed;
   top: 0;
   border: solid 1px #fff;
@@ -48,10 +50,11 @@ export default defineComponent({
   background-color: rgba(0, 0, 0, 50%);
 }
 .modal {
-  margin: 70px;
+  margin: 70px auto;
   height: calc(100% - 70px - 70px);
   width: 100%;
   max-width: 1300px;
+  max-height: 800px;
   border: solid 2px #00938e;
 }
 .hide {
