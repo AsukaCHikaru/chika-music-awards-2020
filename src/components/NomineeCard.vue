@@ -9,17 +9,21 @@
       @click="handleYoutubeClick(nominee.youtube)"
     />
     <div class="nominee-info">
-      <h2 class="artist" :class="{ won: nominee.won }">{{ nominee.artist }}</h2>
-      <h3 class="feat" v-if="nominee.feat" :class="{ won: nominee.won }">
-        {{ nominee.feat }}
-      </h3>
-      <h2
-        class="record"
-        :class="{ won: nominee.won, 'no-feat': !nominee.feat }"
-        v-if="nominee.category !== 'ARTIST'"
-      >
-        "{{ nominee.title && nominee.title }}"
-      </h2>
+      <div class="record-info">
+        <h2 class="artist" :class="{ won: nominee.won }">
+          {{ nominee.artist }}
+        </h2>
+        <h3 class="feat" v-if="nominee.feat" :class="{ won: nominee.won }">
+          {{ nominee.feat }}
+        </h3>
+        <h2
+          class="record"
+          :class="{ won: nominee.won, 'no-feat': !nominee.feat }"
+          v-if="nominee.category !== 'ARTIST'"
+        >
+          "{{ nominee.title && nominee.title }}"
+        </h2>
+      </div>
       <media-links :youtube="nominee.youtube" :spotify="nominee.spotify" />
     </div>
   </div>
@@ -110,26 +114,33 @@ span {
   }
   .nominee-info {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 8px;
+    width: 100%;
+  }
+  .record-info {
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 16px;
     text-align: left;
-  }
-  h2 {
-    font-size: 18px;
-    line-height: 1;
   }
   .artist,
   .record {
-    margin-top: 4px;
+    font-size: 18px;
+    line-height: 1;
+    margin-top: 8px;
+  }
+  .artist {
+    margin-top: 0;
   }
   .feat {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1;
     margin-top: 0;
   }
   .record.no-feat {
-    margin-top: 4px;
+    margin-top: 8px;
   }
   .star-wrapper {
     display: flex;
