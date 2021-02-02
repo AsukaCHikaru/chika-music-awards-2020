@@ -14,42 +14,42 @@
           >
           <a
             class="award-archive-link"
-            href="https://2019.musicawards.asukachikaru.com"
+            href="https://2018.musicawards.asukachikaru.com"
             rel="noopener noreferrer"
             target="_blank"
             >2018</a
           >
           <a
             class="award-archive-link"
-            href="https://2019.musicawards.asukachikaru.com"
+            href="https://2019.musicawards.asukachikaru.com/?year=2017"
             rel="noopener noreferrer"
             target="_blank"
             >2017</a
           >
           <a
             class="award-archive-link"
-            href="https://2019.musicawards.asukachikaru.com"
+            href="https://2019.musicawards.asukachikaru.com/?year=2012"
             rel="noopener noreferrer"
             target="_blank"
             >2012</a
           >
           <a
             class="award-archive-link"
-            href="https://2019.musicawards.asukachikaru.com"
+            href="https://2019.musicawards.asukachikaru.com/?year=2011"
             rel="noopener noreferrer"
             target="_blank"
             >2011</a
           >
           <a
             class="award-archive-link"
-            href="https://2019.musicawards.asukachikaru.com"
+            href="https://2019.musicawards.asukachikaru.com/?year=2010"
             rel="noopener noreferrer"
             target="_blank"
             >2010</a
           >
           <a
             class="award-archive-link"
-            href="https://2019.musicawards.asukachikaru.com"
+            href="https://2019.musicawards.asukachikaru.com/?year=2009"
             rel="noopener noreferrer"
             target="_blank"
             >2009</a
