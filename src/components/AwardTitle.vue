@@ -24,6 +24,7 @@ export default defineComponent({
 <style scoped>
 .title-wrapper {
   text-align: right;
+  flex-shrink: 1;
 }
 
 h1 {

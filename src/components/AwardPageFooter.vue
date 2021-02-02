@@ -130,7 +130,7 @@ button:focus {
     font-size: 15px;
     flex-direction: column;
     text-align: center;
-    bottom: 40px;
+    bottom: 32px;
   }
   .award-archive-link {
     margin: 0 4px;

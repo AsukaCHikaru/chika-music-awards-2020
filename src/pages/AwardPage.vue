@@ -1,6 +1,8 @@
 <template>
   <div class="award-page-container">
+    <div class="above-title-buffer"></div>
     <award-title :category="category" />
+    <div class="below-title-buffer"></div>
     <div class="nominee-container">
       <nominee-card
         v-for="(nominee, index) in nominees"
@@ -48,22 +50,28 @@ export default defineComponent({
   height: 100vh;
   padding: 50px 0;
   position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.above-title-buffer {
+  flex-grow: 2;
+}
+.below-title-buffer {
+  flex-grow: 1;
 }
 .nominee-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-grow: 6;
 }
 
 @media (min-height: 800px) and (min-width: 1920) {
-  .nominee-container {
-    margin-top: calc((100vh - 800px - 200px) / 2);
-  }
 }
 
 @media (max-width: 414px) {
   .award-page-container {
-    padding: 70px 0;
+    padding: 35px 0;
   }
 
   .nominee-container {

@@ -101,7 +101,7 @@ span {
 @media (max-width: 414px) {
   .nominee-card-container {
     flex-direction: row;
-    height: 100px;
+    height: 80px;
     width: auto;
     margin-top: 8px;
   }
@@ -115,15 +115,21 @@ span {
     margin-left: 16px;
     text-align: left;
   }
+  h2 {
+    font-size: 18px;
+    line-height: 1;
+  }
   .artist,
   .record {
-    margin-top: 8px;
+    margin-top: 4px;
   }
   .feat {
+    font-size: 15px;
+    line-height: 1;
     margin-top: 0;
   }
   .record.no-feat {
-    margin-top: 8px;
+    margin-top: 4px;
   }
   .star-wrapper {
     display: flex;

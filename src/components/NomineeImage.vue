@@ -40,8 +40,8 @@ img {
 
 @media (max-width: 414px) {
   img {
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
   }
 }
 </style>

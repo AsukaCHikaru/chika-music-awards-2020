@@ -61,7 +61,7 @@ button:focus {
 @media (max-width: 414px) {
   .media-links-container {
     justify-content: flex-start;
-    margin-top: 8px;
+    margin-top: 4px;
   }
   .youtube {
     margin-right: 16px;

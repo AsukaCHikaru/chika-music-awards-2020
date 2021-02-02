@@ -43,7 +43,7 @@ a {
 
 @media (max-width: 414px) {
   footer {
-    bottom: 24px;
+    bottom: 16px;
   }
 }
 </style>
