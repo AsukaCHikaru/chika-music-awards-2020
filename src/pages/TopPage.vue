@@ -9,9 +9,6 @@
       <br />
       2020
     </div>
-    <!-- <div class="top--triangle-bot-wrapper">
-      <div class="top--triangle-bot"></div>
-    </div> -->
   </div>
 </template>
 
@@ -41,21 +38,38 @@ export default TopPage;
   line-height: 137.5px;
   color: #00938e;
   text-align: right;
-}
-.top--triangle-bot-wrapper {
-  position: relative;
-  bottom: -24px;
-  display: flex;
-  justify-content: flex-end;
+  animation: fadein 0.9s linear;
 }
 
-.top--triangle-bot {
-  width: 24px;
-  border: solid 24px transparent;
-  border-top-color: #00938e;
-  border-top-width: 41.6px;
+@keyframes fadein {
+  0% {
+    opacity: 0.2;
+  }
+  20% {
+    opacity: 0.4;
+  }
+  30% {
+    opacity: 0.55;
+  }
+  40% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  60% {
+    opacity: 0.85;
+  }
+  70% {
+    opacity: 0.9;
+  }
+  80% {
+    opacity: 0.95;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
 @media (min-height: 1000px) {
   .top-title {
     font-size: 15vh;
