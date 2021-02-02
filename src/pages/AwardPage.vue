@@ -7,6 +7,7 @@
       <nominee-card
         v-for="(nominee, index) in nominees"
         :nominee="nominee"
+        :category="category"
         v-bind:key="index"
       />
     </div>

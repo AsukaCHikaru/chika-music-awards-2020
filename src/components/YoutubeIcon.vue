@@ -24,6 +24,7 @@ export default defineComponent({
 svg {
   width: 20px;
   height: 20px;
+  cursor: pointer;
 }
 
 @media (max-width: 414px) {

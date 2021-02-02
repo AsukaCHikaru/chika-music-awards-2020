@@ -3,11 +3,14 @@
     <div class="star-wrapper">
       <span :class="{ hide: !nominee.won }">★</span>
     </div>
-    <button v-if="!isMobile" @click="handleYoutubeClick(nominee.youtube)">
+    <button
+      v-if="!isMobile && category !== 'ARTIST'"
+      @click="handleYoutubeClick(nominee.youtube)"
+    >
       <nominee-image :src="nominee.image" :won="nominee.won" />
     </button>
     <a
-      v-if="isMobile"
+      v-if="isMobile || category === 'ARTIST'"
       :href="nominee.youtube"
       rel="noopener noreferrer"
       target="_blank"
@@ -30,7 +33,11 @@
           "{{ nominee.title && nominee.title }}"
         </h2>
       </div>
-      <media-links :youtube="nominee.youtube" :spotify="nominee.spotify" />
+      <media-links
+        :youtube="nominee.youtube"
+        :spotify="nominee.spotify"
+        :category="category"
+      />
     </div>
   </div>
 </template>
@@ -50,6 +57,10 @@ export default defineComponent({
   props: {
     nominee: {
       type: Object as PropType<RecordAwardNominee | ArtistAwardNominee>,
+      required: true,
+    },
+    category: {
+      type: String,
       required: true,
     },
   },

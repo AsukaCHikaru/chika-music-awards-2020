@@ -27,4 +27,6 @@ export interface ArtistAwardNominee {
   category: ArtistAwardType;
   won: boolean;
   image: string;
+  youtube?: string;
+  spotify?: string;
 }

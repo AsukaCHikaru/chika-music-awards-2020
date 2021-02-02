@@ -2,13 +2,16 @@
   <div class="media-links-container">
     <div class="icon-wrapper youtube" v-if="youtube">
       <a
-        v-if="isMobile"
+        v-if="isMobile || category === 'ARTIST'"
         :href="youtube"
         rel="noopener noreferrer"
         target="_blank"
         ><youtube-icon
       /></a>
-      <button v-if="!isMobile" @click="handleYoutubeClick(youtube)">
+      <button
+        v-if="!isMobile && category !== 'ARTIST'"
+        @click="handleYoutubeClick(youtube)"
+      >
         <youtube-icon />
       </button>
     </div>
@@ -34,6 +37,7 @@ export default defineComponent({
   props: {
     youtube: String,
     spotify: String,
+    category: String,
   },
   data() {
     const isMobile = window.innerWidth <= 414;

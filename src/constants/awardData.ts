@@ -264,30 +264,45 @@ export const awardData: (RecordAwardNominee | ArtistAwardNominee)[] = [
     won: false,
     category: "ARTIST",
     image: "ed_sheeran.jpg",
+    youtube: "https://www.youtube.com/user/EdSheeran",
+    spotify:
+      "https://open.spotify.com/artist/6eUKZXaKkcviH0Ku9w2n3V?si=jZg5T942SIuoVGLKZP_cMg",
   },
   {
     artist: "Eminem",
     won: false,
     category: "ARTIST",
     image: "eminem.jpg",
+    youtube: "https://www.youtube.com/user/EminemMusic",
+    spotify:
+      "https://open.spotify.com/artist/7dGJo4pcD2V6oG8kP0tJRR?si=Zggwah-fS3mfC7ZPyQOCKQ",
   },
   {
     artist: "Halsey",
     won: true,
     category: "ARTIST",
     image: "halsey.jpg",
+    youtube: "https://www.youtube.com/user/iamhalsey",
+    spotify:
+      "https://open.spotify.com/artist/26VFTg2z8YR0cCuwLzESi2?si=04Z_MjcTSjS3DeoOrY-Tsg",
   },
   {
     artist: "june",
     won: false,
     category: "ARTIST",
     image: "june.jpg",
+    youtube: "https://www.youtube.com/channel/UCVN0FO3W5ekwjUB2gOICIyA",
+    spotify:
+      "https://open.spotify.com/artist/4HPbe1kKBultculBbxH66X?si=_LU-y1MiRASHV3GhgZZVJw",
   },
   {
     artist: "Shakira",
     won: false,
     category: "ARTIST",
     image: "shakira.jpg",
+    youtube: "https://www.youtube.com/user/shakira",
+    spotify:
+      "https://open.spotify.com/artist/0EmeFodog0BfCgMzAIvKQp?si=QZtiwg8RQaSVXPeo13G7mQ",
   },
   {
     title: "A Little Messed Up",
