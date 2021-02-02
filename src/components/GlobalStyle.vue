@@ -47,6 +47,9 @@ button {
   -moz-osx-font-smoothing: inherit;
   -webkit-appearance: none;
 }
+button:focus {
+  outline: none;
+}
 button::-moz-focus-inner {
   border: 0;
 }

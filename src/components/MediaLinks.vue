@@ -1,7 +1,14 @@
 <template>
   <div class="media-links-container">
     <div class="icon-wrapper youtube" v-if="youtube">
-      <button @click="handleYoutubeClick(youtube)">
+      <a
+        v-if="isMobile"
+        :href="youtube"
+        rel="noopener noreferrer"
+        target="_blank"
+        ><youtube-icon
+      /></a>
+      <button v-if="!isMobile" @click="handleYoutubeClick(youtube)">
         <youtube-icon />
       </button>
     </div>
@@ -28,6 +35,13 @@ export default defineComponent({
     youtube: String,
     spotify: String,
   },
+  data() {
+    const isMobile = window.innerWidth <= 414;
+
+    return {
+      isMobile,
+    };
+  },
   inject: ["handleYoutubeClick"],
 });
 </script>
@@ -52,10 +66,6 @@ button {
   height: 20px;
   font-size: 20px;
   line-height: 1;
-}
-
-button:focus {
-  outline: none;
 }
 
 @media (max-width: 414px) {

@@ -3,11 +3,17 @@
     <div class="star-wrapper">
       <span :class="{ hide: !nominee.won }">★</span>
     </div>
-    <nominee-image
-      :src="nominee.image"
-      :won="nominee.won"
-      @click="handleYoutubeClick(nominee.youtube)"
-    />
+    <button v-if="!isMobile" @click="handleYoutubeClick(nominee.youtube)">
+      <nominee-image :src="nominee.image" :won="nominee.won" />
+    </button>
+    <a
+      v-if="isMobile"
+      :href="nominee.youtube"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <nominee-image :src="nominee.image" :won="nominee.won" />
+    </a>
     <div class="nominee-info">
       <div class="record-info">
         <h2 class="artist" :class="{ won: nominee.won }">
@@ -46,6 +52,11 @@ export default defineComponent({
       type: Object as PropType<RecordAwardNominee | ArtistAwardNominee>,
       required: true,
     },
+  },
+  data() {
+    const isMobile = window.innerWidth <= 414;
+
+    return { isMobile };
   },
   inject: ["handleYoutubeClick"],
 });

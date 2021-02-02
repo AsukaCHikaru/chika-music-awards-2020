@@ -115,10 +115,6 @@ button {
   color: #75c1dd;
 }
 
-button:focus {
-  outline: none;
-}
-
 @media (min-height: 801px) {
   .page-footer {
     bottom: calc((100vh - 800px - 200px));
