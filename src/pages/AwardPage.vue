@@ -10,6 +10,7 @@
         v-bind:key="index"
       />
     </div>
+    <div class="below-list-buffer"></div>
     <site-footer v-if="category === 'MUSIC_VIDEO'" />
   </div>
 </template>
@@ -63,7 +64,9 @@ export default defineComponent({
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex-grow: 6;
+}
+.below-list-buffer {
+  flex-grow: 5;
 }
 
 @media (min-height: 800px) and (min-width: 1920) {
