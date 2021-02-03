@@ -8,13 +8,17 @@
 import { defineComponent } from "vue";
 import { TOTAL_PAGES } from "../constants/enumConstants";
 
+type ScrollDirection = "up" | "down";
+
 export default defineComponent({
   name: "PageScroller",
   mounted() {
     this.windowHeight = window.innerHeight;
     this.scroller = document.querySelector(".scroller");
     this.scroller?.addEventListener("scroll", this.handleScroll);
-    this.lastPageY = (TOTAL_PAGES - 1) * this.windowHeight;
+    this.pageYs = Array(TOTAL_PAGES)
+      .fill(0)
+      .map((_, index) => index * this.windowHeight);
   },
   destroyed() {
     this.scroller?.removeEventListener("scroll", this.handleScroll);
@@ -24,33 +28,43 @@ export default defineComponent({
       windowHeight: window.innerHeight,
       scroller: document.querySelector(".scroller") || null,
       isAutoScrolling: false,
-      thisPageY: 0,
-      nextPageY: 0,
-      lastPageY: 0,
       currentY: 0,
+      pageYs: [] as number[],
+      currentPage: 0,
+      nextPage: 1,
     };
   },
   methods: {
-    handleScroll(e: Event) {
-      this.currentY = this.scroller?.scrollTop || 0;
-      const scrollDirection = this.currentY > this.thisPageY ? "down" : "up";
-      if (!this.isAutoScrolling && this.currentY < this.lastPageY) {
-        this.isAutoScrolling = true;
-        this.nextPageY =
-          scrollDirection === "down"
-            ? this.thisPageY + this.windowHeight
-            : this.thisPageY - this.windowHeight;
-        this.scroller?.scrollTo({ top: this.nextPageY, behavior: "smooth" });
+    handleScroll() {
+      if (!this.scroller) {
+        return;
       }
+
+      this.currentY = Math.ceil(this.scroller.scrollTop);
+
+      // start
+      if (!this.isAutoScrolling) {
+        if (this.currentY > this.pageYs[this.currentPage])
+          this.nextPage = this.currentPage + 1;
+        if (this.currentY < this.pageYs[this.currentPage])
+          this.nextPage = this.currentPage - 1;
+        if (this.pageYs[this.nextPage] === undefined) {
+          return;
+        }
+        this.isAutoScrolling = true;
+        this.scroller.scrollTo({
+          top: this.pageYs[this.nextPage],
+          behavior: "smooth",
+        });
+      }
+
+      // end
       if (
-        (this.isAutoScrolling &&
-          scrollDirection === "down" &&
-          this.currentY >= this.nextPageY) ||
-        (scrollDirection === "up" && this.currentY <= this.nextPageY)
+        this.isAutoScrolling &&
+        this.currentY === this.pageYs[this.nextPage]
       ) {
-        this.scroller?.scrollTo({ top: this.nextPageY, behavior: "auto" });
+        this.currentPage = this.nextPage;
         this.isAutoScrolling = false;
-        this.thisPageY = this.scroller?.scrollTop || 0;
       }
     },
   },
