@@ -1,5 +1,5 @@
 <template>
-  <div class="scroller" :class="isAutoScrolling ? 'stop-scroll' : ''">
+  <div class="scroller" :class="isAutoScrolling && !isWin ? 'stop-scroll' : ''">
     <slot></slot>
   </div>
 </template>
@@ -7,8 +7,6 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import { TOTAL_PAGES } from "../constants/enumConstants";
-
-type ScrollDirection = "up" | "down";
 
 export default defineComponent({
   name: "PageScroller",
@@ -32,6 +30,7 @@ export default defineComponent({
       pageYs: [] as number[],
       currentPage: 0,
       nextPage: 1,
+      isWin: navigator.platform.includes("Win"),
     };
   },
   methods: {
@@ -41,6 +40,11 @@ export default defineComponent({
       }
 
       this.currentY = Math.ceil(this.scroller.scrollTop);
+      const isGoal =
+        (this.nextPage > this.currentPage &&
+          this.currentY >= this.pageYs[this.nextPage]) ||
+        (this.nextPage < this.currentPage &&
+          this.currentY <= this.pageYs[this.nextPage]);
 
       // start
       if (!this.isAutoScrolling) {
@@ -48,7 +52,10 @@ export default defineComponent({
           this.nextPage = this.currentPage + 1;
         if (this.currentY < this.pageYs[this.currentPage])
           this.nextPage = this.currentPage - 1;
-        if (this.pageYs[this.nextPage] === undefined) {
+        if (
+          this.pageYs[this.nextPage] === undefined ||
+          this.nextPage === this.currentPage
+        ) {
           return;
         }
         this.isAutoScrolling = true;
@@ -59,10 +66,7 @@ export default defineComponent({
       }
 
       // end
-      if (
-        this.isAutoScrolling &&
-        this.currentY === this.pageYs[this.nextPage]
-      ) {
+      if (this.isAutoScrolling && isGoal) {
         this.currentPage = this.nextPage;
         this.isAutoScrolling = false;
       }
