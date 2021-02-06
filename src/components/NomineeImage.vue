@@ -44,4 +44,11 @@ img {
     width: 80px;
   }
 }
+
+@media (max-width: 375px) {
+  img {
+    height: 72px;
+    width: 72px;
+  }
+}
 </style>

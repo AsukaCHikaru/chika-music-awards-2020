@@ -5,7 +5,7 @@
     @scroll="handleScroll"
     @touchmove="handleTouchMove"
   >
-    <slot></slot>
+    <slot />
   </div>
 </template>
 
@@ -85,6 +85,7 @@ export default defineComponent({
             this.prevTouchY = undefined;
             return;
           }
+          console.log(this.prevTouchY, currentTouchY);
           this.nextPage = this.currentPage - 1;
           this.direction = -1;
         }
@@ -100,7 +101,6 @@ export default defineComponent({
         if (this.direction === undefined) {
           return;
         }
-
         this.isAutoScrolling = true;
         window.requestAnimationFrame(this.scrollTo);
       }

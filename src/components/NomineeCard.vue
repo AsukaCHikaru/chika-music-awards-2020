@@ -174,4 +174,10 @@ span {
     font-size: 16px;
   }
 }
+
+@media (max-width: 375px) {
+  .nominee-card-container {
+    height: 72px;
+  }
+}
 </style>

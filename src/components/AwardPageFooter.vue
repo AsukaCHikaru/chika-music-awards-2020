@@ -1,5 +1,5 @@
 <template>
-  <div class="page-footer-wrapper">
+  <div class="page-footer-wrapper" :style="{ height: `${height}px` }">
     <slot></slot>
     <div class="page-footer">
       <div class="award-name">CHIKA MUSIC AWARDS 2020</div>
@@ -78,13 +78,14 @@ export default defineComponent({
       this.isSpreaded = !this.isSpreaded;
     },
   },
+  inject: ["height"],
 });
 </script>
 
 <style scoped>
 .page-footer {
   position: sticky;
-  bottom: 65px;
+  bottom: 50px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -126,10 +127,16 @@ button {
     font-size: 15px;
     flex-direction: column;
     text-align: center;
-    bottom: 32px;
+    bottom: 90px;
   }
   .award-archive-link {
     margin: 0 4px;
+  }
+}
+
+@media (max-width: 375px) {
+  .page-footer {
+    bottom: 98px;
   }
 }
 </style>

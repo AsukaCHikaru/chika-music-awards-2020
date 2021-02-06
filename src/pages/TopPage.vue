@@ -80,7 +80,7 @@ export default TopPage;
 
 @media (max-width: 414px) {
   .top {
-    padding-top: 140px;
+    padding-top: 100px;
   }
   .top-title {
     font-size: 70px;

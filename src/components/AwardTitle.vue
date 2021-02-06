@@ -46,4 +46,10 @@ h1 {
     text-align: left;
   }
 }
+
+@media (max-width: 375px) {
+  h1 {
+    line-height: 1;
+  }
+}
 </style>

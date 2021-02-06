@@ -1,5 +1,9 @@
 <template>
-  <div class="award-page-container" :style="{ height: `${height}px` }">
+  <div
+    class="award-page-container"
+    :class="category === 'MUSIC_VIDEO' ? 'mv' : ''"
+    :style="{ height: `${height}px` }"
+  >
     <div class="above-title-buffer"></div>
     <award-title :category="category" />
     <div class="below-title-buffer"></div>
@@ -56,7 +60,7 @@ export default defineComponent({
   flex-direction: column;
 }
 .above-title-buffer {
-  flex-grow: 2;
+  flex-grow: 1;
 }
 .below-title-buffer {
   flex-grow: 1;
@@ -79,10 +83,26 @@ span {
   .award-page-container {
     padding: 35px 0;
   }
+  .mv {
+    margin-bottom: 40px;
+  }
 
   .nominee-container {
     flex-direction: column;
     justify-content: flex-start;
+  }
+}
+
+@media (max-width: 375px) {
+  .award-page-container {
+    padding: 16px 0;
+  }
+  .above-title-buffer {
+    flex-grow: 0;
+  }
+  .below-title-buffer {
+    max-height: 8px;
+    flex-grow: 0;
   }
 }
 </style>

@@ -46,4 +46,10 @@ a {
     bottom: 16px;
   }
 }
+
+@media (max-width: 375px) {
+  footer {
+    bottom: 8px;
+  }
+}
 </style>
