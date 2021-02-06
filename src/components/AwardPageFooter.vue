@@ -127,7 +127,7 @@ button {
     font-size: 15px;
     flex-direction: column;
     text-align: center;
-    bottom: 90px;
+    bottom: 64px;
   }
   .award-archive-link {
     margin: 0 4px;
