@@ -51,8 +51,10 @@ export default App;
 <style>
 .app-root {
   height: 100%;
+  overflow-y: hidden;
 }
 .app {
   height: 100%;
+  overflow-y: hidden;
 }
 </style>

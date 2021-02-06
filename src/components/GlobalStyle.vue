@@ -24,6 +24,20 @@ html {
   min-height: 100vh;
   max-height: 100vh;
   background-color: #1e113c;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+body {
+  width: 100%;
+  height: 100%;
+  max-height: 100vh;
+  margin: 0;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  position: fixed;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: none;
 }
 h1,
 h2 {
@@ -71,14 +85,6 @@ input {
 input[type="text"] {
   border-radius: 0;
 }
-body {
-  width: 100%;
-  height: 100%;
-  max-height: 100vh;
-  margin: 0;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-}
 @media screen and (min-width: 620px) {
   body {
     font-size: 1.9rem;
@@ -89,6 +95,7 @@ body {
 
 .global-style {
   height: 100%;
-  max-height: 100vh;
+  max-height: 100%;
+  overflow-y: hidden;
 }
 </style>

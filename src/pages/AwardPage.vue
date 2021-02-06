@@ -1,5 +1,5 @@
 <template>
-  <div class="award-page-container">
+  <div class="award-page-container" :style="{ height: `${height}px` }">
     <div class="above-title-buffer"></div>
     <award-title :category="category" />
     <div class="below-title-buffer"></div>
@@ -39,6 +39,7 @@ export default defineComponent({
   props: {
     category: { type: Object as PropType<AwardTypes> },
   },
+  inject: ["height"],
   computed: {
     nominees(): (RecordAwardNominee | ArtistAwardNominee)[] {
       return awardData.filter((a) => a.category === this.category);
@@ -49,7 +50,6 @@ export default defineComponent({
 
 <style scoped>
 .award-page-container {
-  height: 100vh;
   padding: 50px 0;
   position: relative;
   display: flex;
@@ -69,7 +69,9 @@ export default defineComponent({
 .below-list-buffer {
   flex-grow: 5;
 }
-
+span {
+  color: #fff;
+}
 @media (min-height: 800px) and (min-width: 1920) {
 }
 

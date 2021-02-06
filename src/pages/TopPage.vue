@@ -1,5 +1,5 @@
 <template>
-  <div class="top">
+  <div class="top" :style="{ height: `${height}px` }">
     <div class="top-title">
       CHIKA
       <br />
@@ -17,6 +17,7 @@ import { defineComponent } from "vue";
 
 const TopPage = defineComponent({
   name: "TopPage",
+  inject: ["height"],
 });
 
 export default TopPage;
@@ -25,7 +26,7 @@ export default TopPage;
 <style>
 .top {
   padding: 50px 0;
-  height: 100vh;
+  max-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
